@@ -1,0 +1,103 @@
+.fontNav() {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.fontTitle() {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 5rem;
+}
+
+.fontHeader(@fontSize) {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: @fontSize;
+}
+
+.fontPara() {
+  font-family: 'Manrope', sans-serif;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.fontFooter() {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.4rem;
+}
+
+.menuLinks(@color, @hoverColor){
+  color: @color;
+  text-decoration: none;
+  transition: 0.5s;
+  &:hover {
+    color: @hoverColor;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+
+.buttons-banner(){
+	padding: 10px 20px;
+	color: @black;
+	background-color: @white;
+  border-radius: 20px;
+  transition: 0.8s;
+  .fontFooter();
+  text-align: center;
+  text-transform: uppercase;
+  &:hover {
+    background: @dark-green;
+    color: @white;
+    transition: 0.8s;
+  }
+}
+
+.buttons-grid(){
+	padding: 7px 20px;
+	color: @white;
+	background-color: rgba(255,0,0,0);
+  border: 1px solid @white;
+  border-radius: 20px;
+  transition: 0.8s;
+  .fontFooter();
+  text-align: center;
+  text-transform: uppercase;
+  &:hover {
+    background: @dark-green;
+    color: @white;
+    transition: 0.8s;
+  }
+}
+.buttons-info(){
+	padding: 7px 20px;
+	color: @dark-green;
+	background-color: rgba(255,0,0,0);
+  border: 1px solid @light-green;
+  border-radius: 20px;
+  transition: 0.8s;
+  .fontPara();
+  text-align: center;
+  text-transform: uppercase;
+  &:hover {
+    background: @dark-green;
+    color: @white;
+    transition: 0.8s;
+  }
+}
+
+.bg-img(@link, @height){
+  background-image: @link;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: scroll;
+  height: @height;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  &:hover{
+    //make js code instead
+  }
+}

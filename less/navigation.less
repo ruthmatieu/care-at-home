@@ -1,0 +1,47 @@
+
+.header li, a, button {
+  .fontNav();
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; //push left and right item to the far corner
+  align-items: center;
+  padding: 10px 10%;
+  .logo {
+    cursor: pointer;
+    width: 80px;
+  }
+  .nav-links {
+    list-style: none;
+    position: relative;
+    li {
+      display: inline-block;
+      padding: 0 30px;
+      margin-top: 12px;
+      a {
+        transition: all 0.3s ease 0s;
+        color: black;
+        text-decoration: none;
+        &:hover {
+          color: red;
+        }
+      }   
+    }
+  }
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgb(44, 56, 21);
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  color: white;
+  &:hover {
+    background-color: rgba(44,56,21,0.8);
+  }
+}

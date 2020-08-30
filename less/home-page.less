@@ -1,0 +1,153 @@
+#hero-banner {
+  .bg-img(url("../img/hero-background.jpg"), 95vh);
+    // &:after {
+    //   content: '';
+    //   position: absolute;
+    //   width: 90%;
+    //   height: 95%;
+    //   background: rgba(0, 0, 0, 0.3);
+    // }
+    .container {
+      margin-bottom: 0%;
+    }
+      h1 {
+        .fontTitle();
+        margin-top: 5%;
+        color: @black-green;
+      }
+      p {
+        .fontPara();
+        margin-top: 25%;
+        color: @white;
+      }
+      .btn {
+        .buttons-banner();
+        margin-top: 5%;
+      }
+}
+
+#grid {
+  text-align: center;
+  margin: 2% 0;
+  color: @light-green;
+  .grid-one {
+    .bg-img(url("../img/care-one.jpg"), 50vh);
+    .btn {
+      .buttons-grid();
+    }
+  }
+  .grid-two {
+    .bg-img(url("../img/care-two.jpg"), 50vh);
+    .btn {
+      .buttons-grid();
+    }
+  }
+  .grid-three {
+    .bg-img(url("../img/care-three.jpg"), 50vh);
+    .btn {
+      .buttons-grid();
+    }
+  }
+}
+
+#info {
+  text-align: center;
+  font-size: 2rem;
+
+  .info-row-one {
+    margin-bottom: 2%;
+    padding: 0;
+    h3 {
+      color: @dark-green;
+      .fontHeader(4rem);
+    }
+    p {
+      .fontPara();
+      text-align: left;
+      padding: 2% 0;
+      margin-left: 12%;
+      margin-right: 12%;
+    }
+    .btn {
+      padding: 7px 20px;
+    	color: @black-green;
+    	background-color: rgba(255,0,0,0);
+      border: 1px solid @dark-green;
+      border-radius: 15px;
+      transition: 0.8s;
+      .fontFooter();
+      text-align: center;
+      text-transform: uppercase;
+      &:hover {
+        background: @dark-green;
+        color: @white;
+        transition: 0.8s;
+      }
+    }
+  }
+}
+
+#testimonials {
+  margin: 2% 0;
+  text-align: center;
+  .test-one {
+    .bg-img(url("../img/test-one.jpg"), 45vh);
+    margin-bottom: 1%;
+    h3 {
+      .fontHeader(3rem);
+    }
+    p {
+      .fontPara();
+    }
+    .btn {
+      .buttons-grid();
+    }
+  }
+  .test-two {
+    .bg-img(url("../img/test-two.jpg"), 45vh);
+    margin-bottom: 1%;
+    h3 {
+      .fontHeader(3rem);
+    }
+    p {
+      .fontPara();
+    }
+    .btn {
+      .buttons-grid();
+    }
+  }
+  .test-three {
+    .bg-img(url("../img/test-three.jpg"), 45vh);
+    margin-bottom: 1%;
+    h3 {
+      .fontHeader(3rem);
+    }
+    p {
+      .fontPara();
+    }
+    .btn {
+      .buttons-grid();
+    }
+  }
+}
+
+#contact {
+  text-align: center;
+  font-size: 2rem;
+
+  .contact-col-one {
+    margin-bottom: 2%;
+    padding: 0;
+    h3 {
+      color: @dark-green;
+      .fontHeader(4rem);
+    }
+    p {
+      .fontPara();
+      text-align: left;
+      padding: 2% 0;
+      margin-left: 12%;
+      margin-right: 12%;
+    }
+  }
+}

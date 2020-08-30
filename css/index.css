@@ -1,0 +1,553 @@
+/*Colors pallete*/
+/* styles for mobile browsers smaller than 500px; (iPhone) */
+/* styles for browsers smaller than 500px; */
+/* default iPad screens */
+/* default iPad screens */
+/* For landscape layouts only */
+/* For portrait layouts only */
+/* styles for browsers larger than 960px; */
+/* styles for browsers larger than 1440px; */
+/* for sumo sized (mac) screens */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  background-color: #F4F4F4;
+}
+.header li,
+a,
+button {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+}
+.header .logo {
+  cursor: pointer;
+  width: 80px;
+}
+.header .nav-links {
+  list-style: none;
+  position: relative;
+}
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 30px;
+  margin-top: 12px;
+}
+.header .nav-links li a {
+  transition: all 0.3s ease 0s;
+  color: black;
+  text-decoration: none;
+}
+.header .nav-links li a:hover {
+  color: red;
+}
+button {
+  padding: 9px 25px;
+  background-color: #2c3815;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  color: white;
+}
+button:hover {
+  background-color: rgba(44, 56, 21, 0.8);
+}
+#footer {
+  text-align: center;
+  background-color: #3A4031;
+  padding: 5% 0;
+}
+#footer h4 {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 3rem;
+  color: #F4F4F4;
+  padding-bottom: 1%;
+}
+#footer h5 {
+  color: #C8D9B0;
+  font-family: 'Manrope', sans-serif;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+#footer p,
+#footer a {
+  color: #C8D9B0;
+  text-decoration: none;
+  transition: 0.5s;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.4rem;
+}
+#footer p:hover,
+#footer a:hover {
+  color: #FFFFFF;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#hero-banner {
+  background-image: url("../img/hero-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: scroll;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#hero-banner .container {
+  margin-bottom: 0%;
+}
+#hero-banner h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 5rem;
+  margin-top: 5%;
+  color: #3A4031;
+}
+#hero-banner p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 2rem;
+  line-height: 4rem;
+  margin-top: 25%;
+  color: #FFFFFF;
+}
+#hero-banner .btn {
+  padding: 10px 20px;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  transition: 0.8s;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 5%;
+}
+#hero-banner .btn:hover {
+  background: #83A638;
+  color: #FFFFFF;
+  transition: 0.8s;
+}
+#grid {
+  text-align: center;
+  margin: 2% 0;
+  color: #C8D9B0;
+}
+#grid .grid-one {
+  background-image: url("../img/care-one.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: scroll;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#grid .grid-one .btn {
+  padding: 7px 20px;
+  color: #FFFFFF;
+  background-color: rgba(255, 0, 0, 0);
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  transition: 0.8s;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+#grid .grid-one .btn:hover {
+  background: #83A638;
+  color: #FFFFFF;
+  transition: 0.8s;
+}
+#grid .grid-two {
+  background-image: url("../img/care-two.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: scroll;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#grid .grid-two .btn {
+  padding: 7px 20px;
+  color: #FFFFFF;
+  background-color: rgba(255, 0, 0, 0);
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  transition: 0.8s;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+#grid .grid-two .btn:hover {
+  background: #83A638;
+  color: #FFFFFF;
+  transition: 0.8s;
+}
+#grid .grid-three {
+  background-image: url("../img/care-three.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: scroll;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#grid .grid-three .btn {
+  padding: 7px 20px;
+  color: #FFFFFF;
+  background-color: rgba(255, 0, 0, 0);
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  transition: 0.8s;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+#grid .grid-three .btn:hover {
+  background: #83A638;
+  color: #FFFFFF;
+  transition: 0.8s;
+}
+#info {
+  text-align: center;
+  font-size: 2rem;
+}
+#info .info-row-one {
+  margin-bottom: 2%;
+  padding: 0;
+}
+#info .info-row-one h3 {
+  color: #83A638;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 4rem;
+}
+#info .info-row-one p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 2rem;
+  line-height: 4rem;
+  text-align: left;
+  padding: 2% 0;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+#info .info-row-one .btn {
+  padding: 7px 20px;
+  color: #3A4031;
+  background-color: rgba(255, 0, 0, 0);
+  border: 1px solid #83A638;
+  border-radius: 15px;
+  transition: 0.8s;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+#info .info-row-one .btn:hover {
+  background: #83A638;
+  color: #FFFFFF;
+  transition: 0.8s;
+}
+#testimonials {
+  margin: 2% 0;
+  text-align: center;
+}
+#testimonials .test-one {
+  background-image: url("../img/test-one.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: scroll;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+#testimonials .test-one h3 {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 3rem;
+}
+#testimonials .test-one p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+#testimonials .test-one .btn {
+  padding: 7px 20px;
+  color: #FFFFFF;
+  background-color: rgba(255, 0, 0, 0);
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  transition: 0.8s;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+#testimonials .test-one .btn:hover {
+  background: #83A638;
+  color: #FFFFFF;
+  transition: 0.8s;
+}
+#testimonials .test-two {
+  background-image: url("../img/test-two.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: scroll;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+#testimonials .test-two h3 {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 3rem;
+}
+#testimonials .test-two p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+#testimonials .test-two .btn {
+  padding: 7px 20px;
+  color: #FFFFFF;
+  background-color: rgba(255, 0, 0, 0);
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  transition: 0.8s;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+#testimonials .test-two .btn:hover {
+  background: #83A638;
+  color: #FFFFFF;
+  transition: 0.8s;
+}
+#testimonials .test-three {
+  background-image: url("../img/test-three.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: scroll;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+#testimonials .test-three h3 {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 3rem;
+}
+#testimonials .test-three p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+#testimonials .test-three .btn {
+  padding: 7px 20px;
+  color: #FFFFFF;
+  background-color: rgba(255, 0, 0, 0);
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  transition: 0.8s;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+#testimonials .test-three .btn:hover {
+  background: #83A638;
+  color: #FFFFFF;
+  transition: 0.8s;
+}
+#contact {
+  text-align: center;
+  font-size: 2rem;
+}
+#contact .contact-col-one {
+  margin-bottom: 2%;
+  padding: 0;
+}
+#contact .contact-col-one h3 {
+  color: #83A638;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 4rem;
+}
+#contact .contact-col-one p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 2rem;
+  line-height: 4rem;
+  text-align: left;
+  padding: 2% 0;
+  margin-left: 12%;
+  margin-right: 12%;
+}
